@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Open Sans" , sans-serif;
+        text-decoration: none;
+        list-style: none;
+    }
+    .pricing-table {
+        background: url('https://images.pexels.com/photos/1472887/pexels-photo-1472887.jpeg?auto=compress&cs=tinysrgb&w=800') no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    .pricing-table {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: min(1600px, 100%);
+        margin: auto;
+    }
+    .pricing-card{
+        flex: 1;
+        max-width: 360px;
+        background-color: #fff;
+        margin: 20px 10px;
+        text-align: center;
+        cursor: pointer;
+        overflow: hidden;
+        color: #2d2d2d;
+        transition: .3s linear;
+    }
+    .pricing-card-header {
+        background-color: #0fbcf9;
+        display: inline-block;
+        color: #fff;
+        padding: 12px 30px;
+        border-radius: 0 0 20px 20px;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+        transition: .4s linear;
+    }
+    .pricing-card:hover .pricing-card-header {
+        box-shadow: 0 0 0 26em #0fbcf9;
+    }
+    .price{
+        font-size: 70px;
+        color: #0fbcf9;
+        margin: 40px 0;
+        transition: .2s linear;
+    }
+    .price sup, .price span {
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .pricing-card:hover , .pricing-card:hover .price{
+        color: #fff;
+    }
+    .pricing-card li {
+        font-size: 16px;
+        padding: 10px 0;
+        text-transform: uppercase;
+    }
+    .order-btn{
+        display: inline-block;
+        margin-bottom: 40px;
+        margin-top: 80px;
+        border: 2px solid #0fbcf9;
+        color: #0fbcf9;
+        padding: 18px 40px;
+        border-radius: 8px;
+        text-transform: uppercase;
+        font-weight: 500;
+        transition: .3s linear;
+    }
+    .order-btn:hover {
+        background-color: #0fbcf9;
+        color: #fff;
+    }
+    @media screen and (max-width:1100px){
+        .pricing-card{
+            flex: 50%;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="pricing-table">
+        <div class="pricing-card">
+            <h3 class="pricing-card-header">Basic</h3>
+            <div class="price"><sup>$</sup>1<span>/MO</span></div>
+            <ul>
+                <li><strong>4</strong> Classes Per Week</li>
+                <li><strong>60</strong> Batch Size</li>
+                <li><strong>Basic</strong> Yoga Styles</li>
+                <li><strong>Strong</strong> Diet Plan</li>
+                <li><strong>Best </strong> For beginnners</li>
+            </ul>
+            <a href="#" class="order-btn">BUY NOW</a>
+        </div>
+        <div class="pricing-card">
+            <h3 class="pricing-card-header">Premium</h3>
+            <div class="price"><sup>$</sup>3<span>/MO</span></div>
+            <ul>
+                <li><strong>5</strong> Classes Per Week</li>
+                <li><strong>45</strong> Batch Size</li>
+                <li><strong>Power</strong> Yoga</li>
+                <li><strong>Yin</strong> Yoga</li>
+                <li><strong>Access to</strong> recorded lectures</li>
+            </ul>
+            <a href="#" class="order-btn">BUY NOW</a>
+        </div>
+        <div class="pricing-card">
+            <h3 class="pricing-card-header">Ultimate</h3>
+            <div class="price"><sup>$</sup>5<span>/MO</span></div>
+            <ul>
+                <li><strong>5</strong> Classes Per Week</li>
+                <li><strong>35</strong> Batch Size</li>
+                <li><strong>Advance</strong> Yoga</li>
+                <li><strong>FREE ENTRY</strong> to monthly wellness events</li>
+                <li><strong>Personalized</strong> 1-on-1 attention</li>
+            </ul>
+            <a href="#" class="order-btn">BUY NOW</a>
+        </div>
+    </div>
+</body>
+</html>

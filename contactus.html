@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Yoga Studio</title>
+    <style>
+        .contact-section {
+    background: #f2f2f2;
+    padding: 2rem 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.contact-section h2 {
+    color: #094b89;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-section p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #094b89;
+    outline: none;
+    box-shadow: 0 0 5px rgba(107, 112, 92, 0.5);
+}
+
+.contact-form button {
+    background: #094b89;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact-form button:hover {
+    background: #a5a58d;
+    transform: scale(1.05);
+}
+
+.contact-form button:active {
+    transform: scale(1);
+}
+    </style>
+</head>
+<body>
+    <section id="contact" class="contact-section">
+        <div class="containe">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Reach out with any questions or to book a session.</p>
+            <form action="#" method="post" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
