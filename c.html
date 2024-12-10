@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yoga</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform-style: preserve-3d;
+            transform: perspective(800px);
+        }
+        .box{
+            position: relative;
+            width: 250px;
+            height: 200px;
+            background-color: transparent;
+            transform-style: preserve-3d ;
+            transform: rotateX(-15deg) rotateY(0deg);
+            transition: 1s transform;
+        }
+        .slide{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            cursor: pointer;
+        }
+        .s1{
+            background-image: url(http://fitsri.com/wp-content/uploads/2020/12/Pranamasana-1024x683.jpg);
+            transform: rotateY(0deg) translateZ(380px);
+        }
+        .s2{
+            background-image: url(http://fitsri.com/wp-content/uploads/2020/12/Hastauttanasana-1024x683.jpg);
+            transform: rotateY(36deg) translateZ(380px);
+        }
+        .s3{
+            background-image: url(http://fitsri.com/wp-content/uploads/2020/12/Hastapadasana-1024x683.jpg);
+            transform: rotateY(72deg) translateZ(380px);
+        }
+        .s4{
+            background-image: url(http://fitsri.com/wp-content/uploads/2020/12/Ashwa-Sanchalanasana-1024x683.jpg);
+            transform: rotateY(108deg) translateZ(380px);
+        }
+        .s5{
+            background-image: url(http://fitsri.com/wp-content/uploads/2020/12/Dandasana-1024x683.jpg);
+            transform: rotateY(144deg) translateZ(380px);
+        }
+        .s6{
+            background-image: url(http://fitsri.com/wp-content/uploads/2020/12/Ashtanga-Namaskara-1024x683.jpg);
+            transform: rotateY(180deg) translateZ(380px);
+        }
+        .s7{
+            background-image: url(http://fitsri.com/wp-content/uploads/2020/12/Bhujangasana-1024x683.jpg);
+            transform: rotateY(216deg) translateZ(380px);
+        }
+        .s8{
+            background-image: url(http://fitsri.com/wp-content/uploads/2020/12/parvatasana-1024x683.jpg);
+            transform: rotateY(252deg) translateZ(380px);
+        }
+        .s9{
+            background-image: url(http://fitsri.com/wp-content/uploads/2020/12/Ashwa-Sanchalanasana-1024x683.jpg);
+            transform: rotateY(288deg) translateZ(380px);
+        }
+        .s10{
+            background-image: url(http://fitsri.com/wp-content/uploads/2020/12/Hastapadasana-1024x683.jpg);
+            transform: rotateY(324deg) translateZ(380px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="slide s1"></div>
+        <div class="slide s2"></div>
+        <div class="slide s3"></div>
+        <div class="slide s4"></div>
+        <div class="slide s5"></div>
+        <div class="slide s6"></div>
+        <div class="slide s7"></div>
+        <div class="slide s8"></div>
+        <div class="slide s9"></div>
+        <div class="slide s10"></div>
+    </div>
+    <script type="text/javascript">
+        let box = document.querySelector('.box');
+            slides = document.querySelectorAll('.slide ');
+        slides.forEach((slide, i) => {
+            slide.addEventListener('click',()=> {
+                box.style.transform = `rotateX(-15deg)
+                rotateY(-${i*36}deg)`;
+            });
+        });
+</script>   
+</body>
+</html>
